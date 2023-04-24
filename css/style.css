@@ -1,0 +1,488 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+}
+
+:root {
+    /* ### Primary */
+
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+   
+    /* ### Neutral */
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Magnolia);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    width: 55rem;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--White);
+    display: flex;
+    align-items: baseline;
+}
+
+.sidebar {
+    width: 274px;
+    height: 568px;
+    margin: 15px;
+    text-transform: uppercase;
+    color: var(--White);
+    background-image: url('/assets/images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+.activ {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    gap: 10px;
+}
+
+.step p {
+    font-family: 'Arial';
+    font-size: 11px;
+    color: var(--Pastel-blue);
+}
+
+.step span {
+    font-size: 16px;
+    color: var(--White);
+}
+
+/* steps on/off */
+.Step2,
+.Step3,
+.Step4,
+.Step5 {
+    display: none;
+}
+/* ---------------- */
+
+.Step1,
+.Step2,
+.Step3,
+.Step4 {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.Step1 .p,
+.Step2 .p,
+.Step3 .p,
+.Step4 .p,
+.Step5 .p {
+    margin-top: 10px;
+    color: var(--Cool-gray);
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--Marine-blue);
+}
+
+form {
+    padding: 35px 0;
+}
+
+form .p {
+    font-weight: lighter;
+    color: var(--Marine-blue);
+    margin-bottom: 40px;
+}
+
+form r {
+    color: var(--Strawberry-red);
+    float: right;
+}
+
+form input {
+    width: 93%;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 5px 0 15px;
+    border: 1px solid var(--Light-gray);
+    transition: all 0.3s;
+}
+
+form input::placeholder {
+    font-weight: bold;
+    color: var(--Cool-gray);
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid var(--Purplish-blue);
+}
+
+.Step2 .box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.Step2 .box-min {
+    border: 1px solid var(--Light-gray);
+    border-radius: 6px;
+    width: 100px;
+    padding: 17px;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.box-min:hover {
+    border: 1px solid var(--Purplish-blue);
+    background-color: var(--Magnolia);
+}
+
+.Step2 .box-min p {
+    margin-top: 35px;
+    font-weight: bold;
+    color: var(--Marine-blue);
+}
+
+.box-min .yrArcade,
+.yrAdvanced,
+.yrPro {
+    color: var(--Cool-gray);
+}
+
+.box-min .yrTexArcade,
+.yrTexAdvanced,
+.yrTexPro {
+    color: var(--Marine-blue);
+    font-size: 14px;
+}
+
+.Step2 .bts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: var(--Magnolia);
+}
+
+.bt-radio {
+    height: 25px;
+    width: 60px;
+    border-radius: 50px;
+    margin: 5px 25px;
+    background-color: var(--Marine-blue);
+}
+
+.bt-radio .bol {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--White);
+    margin: 3px;
+}
+
+.bt-Monthly {
+    color: var(--Marine-blue);
+    cursor: pointer;
+}
+
+.bt-Yearly {
+    color: var(--Cool-gray);
+    cursor: pointer;
+}
+
+.Step3 .iten-box {
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    top: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--Marine-blue);
+    border: 1px solid var(--Light-gray);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.Step3 .iten-box:hover {
+    border: 1px solid var(--Purplish-blue);
+    background-color: var(--Magnolia);
+}
+
+.Step3 .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Step3 span {
+    font-weight: lighter;
+    color: var(--Cool-gray);
+}
+
+.Step3 .numb {
+    position: absolute;
+    right: 10px;
+    font-weight: lighter;
+    color: var(--Purplish-blue);
+}
+
+.Arcade-box {
+    position: relative;
+    color: var(--Marine-blue);
+    background-color: var(--Magnolia);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 25px;
+    margin-top: 40px;
+    border-radius: 6px 6px 0 0;
+}
+
+.Arcade-box .btChange {
+    margin-top: 5px;
+    color: var(--Cool-gray);
+    border: none;
+    background-color: var(--Magnolia);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.Arcade-box .btChange:hover {
+    color: var(--Purplish-blue);
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.Arcade-box .btBackChange {
+    display: none;
+    margin-top: 5px;
+    color: var(--Purplish-blue);
+    background-color: var(--Magnolia);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+hr {
+    position: absolute;
+    width: 95%;
+    border: none;
+    border: 1px solid var(--Light-gray);
+    margin-top: 80px;
+    text-align: center;
+}
+
+.list-box {
+    position: relative;
+    background-color: var(--Magnolia);
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 20px;
+    border-radius: 0 0 6px 6px;
+}
+
+.list-box .item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.list-box .item div {
+    color: var(--Marine-blue);
+}
+
+.list-box p {
+    color: var(--Cool-gray);
+}
+
+.totalMonth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.totalMonth p {
+    color: var(--Cool-gray);
+}
+
+.totalMonth h2 {
+    color: var(--Purplish-blue);
+}
+
+.Step5 {
+    position: absolute;
+    width: 450px;
+    right: 50px;
+    bottom: 150px;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--Cool-gray);
+}
+
+.Step5 h1 {
+    color: var(--Marine-blue);
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.Step5 a {
+    text-decoration: none;
+    color: var(--Cool-gray);
+    transition: all 0.3s;
+}
+
+.Step5 a:hover {
+    color: var(--Purplish-blue);
+}
+
+.Step5 .bt-end {
+    margin-top: 30px;
+    padding: 10px 50px;
+    border-radius: 6px;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bt-end:hover {
+    background-color: var(--Purplish-blue);
+}
+
+/* Botões to-back/Next */
+.bt-BackNext {
+    display: none;
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bt-next1 {
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bt-next1:hover {
+    background-color: var(--Purplish-blue);
+}
+
+.bt-next2,
+.bt-next3 {
+    display: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bt-next2:hover,
+.bt-next3:hover {
+    background-color: var(--Purplish-blue);
+}
+
+.Go-Back,
+.Go-Back3,
+.Go-Back4 {
+    display: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--Cool-gray);
+    background-color: var(--White);
+    transition: all 0.3s;
+}
+
+.Go-Back:hover,
+.Go-Back3:hover,
+.Go-Back4:hover {
+    color: var(--Marine-blue);
+}
+
+.bt-Confirm {
+    display: none;
+    padding: 10px 26px;
+    border-radius: 6px;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bt-Confirm:hover {
+    background-color: var(--Purplish-blue);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
