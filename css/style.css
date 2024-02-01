@@ -10,16 +10,11 @@
 }
 
 :root {
-    /* ### Primary */
-
     --Marine-blue: hsl(213, 96%, 18%);
     --Purplish-blue: hsl(243, 100%, 62%);
     --Pastel-blue: hsl(228, 100%, 84%);
     --Light-blue: hsl(206, 94%, 87%);
     --Strawberry-red: hsl(354, 84%, 57%);
-   
-    /* ### Neutral */
-
     --Cool-gray: hsl(231, 11%, 63%);
     --Light-gray: hsl(229, 24%, 87%);
     --Magnolia: hsl(217, 100%, 97%);
@@ -84,14 +79,12 @@ main {
     color: var(--White);
 }
 
-/* steps on/off */
 .Step2,
 .Step3,
 .Step4,
 .Step5 {
     display: none;
 }
-/* ---------------- */
 
 .Step1,
 .Step2,
@@ -398,7 +391,6 @@ hr {
     background-color: var(--Purplish-blue);
 }
 
-/* Botões to-back/Next */
 .bt-BackNext {
     display: none;
     position: absolute;
@@ -481,8 +473,8 @@ hr {
     bottom: 10px;
     font-size: 11px;
     text-align: center;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}

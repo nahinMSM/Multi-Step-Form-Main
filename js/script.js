@@ -1,4 +1,3 @@
-// step 1
 const ActivS1 = document.querySelector('.bg1')
 const nextS1 = document.querySelector('.bt-next1')
 nextS1.addEventListener('click', next1)
@@ -40,7 +39,7 @@ function next1() {
     }
 
 }
-// step 2
+
 const ArcaSelect = document.querySelector('.Arcade')
 ArcaSelect.addEventListener('click', Arcselect)
 function Arcselect() {
@@ -129,7 +128,6 @@ function next2() {
     document.querySelector('.bt-next3').style.display = 'block'
 }
 
-// step 3
 const itenBoxOnline = document.querySelector('.BoxOnline')
 const itenOline = document.querySelector('.itenOnline')
 itenOline.addEventListener('click', ItenOline)
@@ -207,7 +205,6 @@ function next3() {
     document.querySelector('.bt-Confirm').style.display = 'block'
 }
 
-// step 4
 const change = document.querySelector('.btChange')
 change.addEventListener('click', btChange)
 function btChange() {
@@ -257,12 +254,9 @@ function Confirm() {
     document.querySelector('.Go-Back4').style.display = 'none'
     document.querySelector('.bt-Confirm').style.display = 'none'
 }
-// end 
-// step 5
+
 const btEnd = document.querySelector('.bt-end')
 btEnd.addEventListener('click', refresh)
 function refresh() {
     window.location.reload(true)
 }
-
-// end
