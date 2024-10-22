@@ -4,12 +4,24 @@ Esta é uma solução para o [desafio de formulário em várias etapas no Fronte
 
 ## Índice
 
-  - [O desafio](#o-desafio)
-  - [Links](#links)
-  - [Construído com](#construído com)
-- [Autor](#autor)
-- [Agradecimentos](#acknowledgments)
+  - [O desafio](#O-desafio)
+  - [Links](#Links)
+  - [Construído com](#construído-com)
+- [Autor](#Autor)
+- [Agradecimentos](#Agradecimentos)
 
+<div style="display: flex; justify-content: space-between;">
+   <img src="design/active-states-step-1.jpg" width="220"/>
+   <img src="design/active-states-step-2.jpg" width="220"/>
+   <img src="design/active-states-step-3.jpg" width="220"/>
+   <img src="design/active-states-step-4.jpg" width="220"/>
+</div>
+<div style="display: flex; justify-content: space-between;">
+   <img src="design/mobile-design-step-1.jpg" width="100"/>
+   <img src="design/mobile-design-step-2-monthly.jpg" width="100"/>
+   <img src="design/mobile-design-step-3-monthly.jpg" width="100"/>
+   <img src="design/mobile-design-step-4-monthly.jpg" width="100"/>
+</div>
 
 ### O desafio
 
